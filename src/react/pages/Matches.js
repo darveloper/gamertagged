@@ -1,5 +1,5 @@
 import React from "react";
-import MatchCard from "../components/MatchCard";
+import FriendsAction from "../components/FriendsAction";
 import "./Matches.css";
 import 'antd/dist/antd.css';
 
@@ -10,7 +10,7 @@ class Matches extends React.Component {
         <h1>Matches</h1>
         <div className="container" style={{ height: "100vh" }}>
           <div className="UserCard">
-            <MatchCard className="MatchCard" />
+            <FriendsAction className="MatchCard" />
           </div>
         </div>
       </div>

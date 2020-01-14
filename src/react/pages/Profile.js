@@ -1,11 +1,15 @@
 import React from "react";
 import UserCard from "../components/UserCard";
-import "./Profile.css"
+import "./Profile.css";
+import { userIsAuthenticated } from "../HOCs";
+import TopMenu from "../components/TopMenu";
 
 class Profile extends React.Component {
     render() {
         return (
-            <div className="container" style={{ height: "100vh" }}>
+            
+            <div>
+                <TopMenu />
                 <div className="UserCard">
                     <UserCard />   
                 </div>
@@ -14,4 +18,4 @@ class Profile extends React.Component {
     }
 }
 
-export default Profile;
+export default userIsAuthenticated(Profile);

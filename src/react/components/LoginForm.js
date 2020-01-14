@@ -22,21 +22,22 @@ class LoginForm extends React.Component {
       <React.Fragment>
         <Form className="login-form" onSubmit={this.handleLogin}>
           <Form.Item>
-            <Input
+          <Input
               prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="Username"
-              value={this.state.username}
-              htmlType="text"
+              required
+              type="text"
+              autoFocus
               onChange={this.handleChange}
             />
           </Form.Item>
           <Form.Item>
-            <Input
+          <Input
               prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+              placeholder="password"
               type="password"
-              placeholder="Password"
+              required
               onChange={this.handleChange}
-              value={this.state.password}
             />
           </Form.Item>
           <Form.Item>
