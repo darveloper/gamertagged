@@ -3,6 +3,7 @@ import RegisterForm from "../components/RegisterForm";
 import "./Home.css";
 
 
+
 class Register extends React.Component {
   render() {
     return (

@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Icon, Input, Button } from "antd";
 import "./LoginForm.css";
 
+
 class RegisterForm extends React.Component {
   render() {
     return (
@@ -26,6 +27,7 @@ class RegisterForm extends React.Component {
               type="primary"
               htmlType="submit"
               className="login-form-button"
+              href="/questionnaire"
             >
               Register
             </Button>

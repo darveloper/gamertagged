@@ -6,9 +6,9 @@ class NotFound extends React.Component {
   render() {
     return (
       <>
-        <p style={{ textAlign: "center" }}>Page not found</p>
+        <h1 style={{ textAlign: "center" }}>Page not found</h1>
         <Button type="link" block href={pages.Home.path}>
-          Go Home
+          Go Back Home
         </Button>
       </>
     );
