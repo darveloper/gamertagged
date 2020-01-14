@@ -22,7 +22,6 @@ class RegisterForm extends React.Component {
       <React.Fragment>
         <Form className="login-form" onSubmit={this.handleLogin}>
           <Form.Item htmlFor="username">
-            Create a Username
             <Input
               prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="Username"
@@ -33,7 +32,6 @@ class RegisterForm extends React.Component {
             />
           </Form.Item>
           <Form.Item htmlFor="displayName">
-            Create a Display Name
             <Input
               prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="Display Name"
@@ -44,7 +42,6 @@ class RegisterForm extends React.Component {
             />
           </Form.Item>
           <Form.Item htmlFor="password">
-            Create a Password
             <Input
               prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="password"
@@ -62,6 +59,17 @@ class RegisterForm extends React.Component {
               disable={loading}
             >
               Register
+            </Button>
+          </Form.Item>
+          <Form.Item>
+            <Button
+              type="secondary"
+              htmlType="submit"
+              className="login-form-button"
+              href="/"
+              disable={loading}
+            >
+              Already a member? Login Here
             </Button>
           </Form.Item>
         </Form>

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Menu, Icon, Layout } from "antd";
 import "./SideMenu.css";
 import { connect, withAsyncAction } from "../HOCs";

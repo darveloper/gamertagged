@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import LoginForm from "../components/LoginForm";
-
 import "./Home.css";
-import { Link } from "react-router-dom";
 
 class Home extends Component {
   render() {
@@ -11,12 +9,9 @@ class Home extends Component {
         <div className="header">
           <h1 style={{ fontFamily: "Orbitron" }}>Welcome To GamerTagged!</h1>
         </div>
-        <div style={{ marginTop: "30px" }}>
+        <div className="login_container" style={{ marginTop: "5%" }}>
           <LoginForm />
         </div>
-        <h4>
-          Don't have an account? <Link to="/Register">Register Here!</Link>
-        </h4>
       </>
     );
   }

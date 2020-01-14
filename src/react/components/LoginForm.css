@@ -15,3 +15,10 @@
   align-content: center;
   margin-top: 20px;
 }
+
+.Logo {
+  object-fit: contain;
+  max-width: 20%;
+  margin-left: 40%;
+  margin-top: 8%;
+}
