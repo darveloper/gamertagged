@@ -1,18 +1,17 @@
 .login-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 20em;
-    margin: auto;
-  }
-  
-  .login-form-button {
-    width: 100%;
-  }
-  
-  #error {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  max-width: 20em;
+  margin: auto;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+#error {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}

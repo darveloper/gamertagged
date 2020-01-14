@@ -8,8 +8,12 @@ class Home extends Component {
   render() {
     return (
       <>
-        <h1 style={{ fontFamily: "Orbitron" }}>Welcome To GamerTagged!</h1>
-        <LoginForm />
+        <div className="header">
+          <h1 style={{ fontFamily: "Orbitron" }}>Welcome To GamerTagged!</h1>
+        </div>
+        <div style={{ marginTop: "30px" }}>
+          <LoginForm />
+        </div>
         <h4>
           Don't have an account? <Link to="/Register">Register Here!</Link>
         </h4>
