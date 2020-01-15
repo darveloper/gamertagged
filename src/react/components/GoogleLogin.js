@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './GoogleLogin.css';
 import GoogleLogin from 'react-google-login';
 
-class GoogleLogin extends Component {
+class GoogleLoginForm extends Component {
 
     render() {
   
@@ -26,4 +26,4 @@ class GoogleLogin extends Component {
     }
   }
   
-  export default GoogleLogin;
+  export default GoogleLoginForm;
