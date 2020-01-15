@@ -6,7 +6,7 @@ import Register from "./Register";
 import Questionnaire from "./Questionnaire";
 import Messages from "./Messages";
 import Onboarding from "./Onboarding";
-// import FriendsPage from "./FriendsPage"
+import FriendsPage from "./FriendsPage"
 
 export default {
   Home: { path: "/", component: Home },
@@ -15,7 +15,7 @@ export default {
   Register: { path: "/register", component: Register },
   Messages: { path: "/messages", component: Messages },
   Onboarding: { path: "/onboarding", component: Onboarding },
-  // FriendsPage: { path: "/friendspage", component: FriendsPage },
+  FriendsPage: { path: "/friendspage", component: FriendsPage },
   Questionnaire: { path: "/questionnaire", component: Questionnaire },
   NotFound: { path: "*", component: NotFound }
 };

@@ -16,7 +16,13 @@ class SideMenu extends React.Component {
       <React.Fragment>
         {/* {this.props.isAuthenticated && ( */}
         <Header style={{ backgroundColor: "rgb(54, 76, 121)" }}>
-          <h1 style={{ fontFamily: "Orbitron", color: "whitesmoke" }}>
+          <h1
+            style={{
+              fontFamily: "Orbitron",
+              color: "whitesmoke",
+              paddingTop: "15px "
+            }}
+          >
             GamerTagged
           </h1>
         </Header>
@@ -32,7 +38,7 @@ class SideMenu extends React.Component {
             >
               <Menu.Item key="1">
                 <NavLink to={`/matches/`} activeClassName="chosen">
-                  <Icon type="team" />
+                  <Icon type="heart" />
                   Matches
                 </NavLink>
               </Menu.Item>
@@ -40,6 +46,13 @@ class SideMenu extends React.Component {
                 <NavLink to={`/profile/`} activeClassName="chosen">
                   <Icon type="user" />
                   Profile
+                </NavLink>
+              </Menu.Item>
+
+              <Menu.Item key="3">
+                <NavLink to={`/friendspage/`} activeClassName="chosen">
+                  <Icon type="team" />
+                  Friends
                 </NavLink>
               </Menu.Item>
 
@@ -56,6 +69,7 @@ class SideMenu extends React.Component {
             <Footer style={{ backgroundColor: "rgb(54, 76, 121)" }}></Footer>
           </Layout>
         </Layout>
+
         {/* <Sider>
             <div className="logo">
               <img
