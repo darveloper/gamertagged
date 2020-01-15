@@ -4,6 +4,7 @@ import NotFound from "./NotFound";
 import Matches from "./Matches";
 import Register from "./Register";
 import Questionnaire from "./Questionnaire"
+import FriendsPage from "./FriendsPage"
 
 export default {
   Home: { path: "/", component: Home },

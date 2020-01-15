@@ -1,0 +1,44 @@
+
+div.header{
+  color:red;
+}
+ui.card{
+  border: 10px double black;
+border-radius: 10px;
+
+}
+.cardgroup {
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(50, 115, 255));
+display: flex;
+justify-content: space-evenly;
+text-align: left;
+align-items: stretch;
+border: 10px double black;
+border-radius: 15px;
+}
+.searchbar {
+margin-left: 995px;
+margin-top: inherit;
+border: 10px double black;
+border-radius: 10px;
+}
+.usercardFP{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  border: 10px double black;
+  border-radius: 10px;
+
+}
+
+.userimg{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 10px double black;
+  border-radius: 10px;
+}
+.searchbar{
+  border: 10px double black;
+  border-radius: 10px;
+}

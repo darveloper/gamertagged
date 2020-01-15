@@ -16,7 +16,7 @@ class UserCard extends React.Component {
               <img
                 className="cardImg"
                 alt="example"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+                src="https://image.flaticon.com/icons/svg/1880/1880988.svg"
               />
             }
             actions={[
