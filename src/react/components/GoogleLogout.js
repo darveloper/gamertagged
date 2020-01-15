@@ -2,7 +2,7 @@ import { GoogleLogout } from 'react-google-login';
 
 
     <GoogleLogout
-      clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+      clientId="869187170200-3dtdrjohk5k63ogj0roa8l9k4gpmjr88.apps.googleusercontent.com"
       buttonText="Logout"
       onLogoutSuccess={logout}
     >
