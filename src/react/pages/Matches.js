@@ -9,8 +9,7 @@ class Matches extends React.Component {
     return (
       <SideMenu>
         <div>
-          <h1>Matches</h1>
-          <div className="container" style={{ height: "100vh" }}>
+          <div className="container">
             <div className="UserCard">
               <FriendsAction className="MatchCard" />
             </div>
