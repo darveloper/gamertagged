@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import LoginForm from "../components/LoginForm";
 import "./Home.css";
-import { go } from "connected-react-router";
-import GoogleLoginForm from "../components/GoogleLoginForm";
+import GoogleLogin from "../components/GoogleLogin";
 
 class Home extends Component {
   render() {
