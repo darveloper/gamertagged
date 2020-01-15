@@ -20,9 +20,15 @@ class LoginForm extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <img
+          className="Logo"
+          src="https://i.imgur.com/I3PbSAq.png"
+          alt="logo"
+        />
+        <h1 style={{ color: "white", fontFamily: "Orbitron" }}> Sign In</h1>
         <Form className="login-form" onSubmit={this.handleLogin}>
           <Form.Item>
-          <Input
+            <Input
               prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="Username"
               required
@@ -32,7 +38,7 @@ class LoginForm extends React.Component {
             />
           </Form.Item>
           <Form.Item>
-          <Input
+            <Input
               prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="password"
               type="password"
@@ -48,10 +54,20 @@ class LoginForm extends React.Component {
               href="/profile"
             >
               {" "}
-              Login{" "}
+              Submit{" "}
             </Button>
           </Form.Item>
-          <Form.Item></Form.Item>
+          <Form.Item>
+            <Button
+              type="secondary"
+              htmlType="submit"
+              className="login-form-button"
+              href="/Register"
+            >
+              {" "}
+              New User? Register Here{" "}
+            </Button>
+          </Form.Item>
         </Form>
       </React.Fragment>
     );
