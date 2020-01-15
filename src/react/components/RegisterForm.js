@@ -59,7 +59,7 @@ class RegisterForm extends React.Component {
               
               disable={loading}
             >
-              <Link to="/questionnaire">Register</Link>
+              <Link to="/onboarding">Register</Link>
             </Button>
           </Form.Item>
           <Form.Item>
