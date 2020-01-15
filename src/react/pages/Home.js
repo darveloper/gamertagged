@@ -12,7 +12,7 @@ class Home extends Component {
         </div>
         <div className="login_container" style={{ marginTop: "5%" }}>
           <LoginForm />
-          <GoogleLogin />
+          <GoogleLoginForm />
         </div>
       </>
     );
