@@ -44,7 +44,12 @@ class FriendsAction extends React.Component {
               hoverable
               style={{ width: 240 }}
               size="default"
-              cover={<img alt="example" src="https://i.etsystatic.com/19992745/d/il/8f1ddd/1913247275/il_150x150.1913247275_o47r.jpg?version=0" />}
+              cover={
+                <img
+                  alt="example"
+                  src="https://i.etsystatic.com/19992745/d/il/8f1ddd/1913247275/il_150x150.1913247275_o47r.jpg?version=0"
+                />
+              }
               actions={[
                 <Icon onClick={openNotification} type="user-add" />,
                 <Link to="/messages">
@@ -60,7 +65,9 @@ class FriendsAction extends React.Component {
               hoverable
               style={{ width: 240 }}
               size="default"
-              cover={<img alt="example" src="https://i.imgflip.com/2/v1sj7.jpg" />}
+              cover={
+                <img alt="example" src="https://i.imgflip.com/2/v1sj7.jpg" />
+              }
               actions={[
                 <Icon onClick={openNotification} type="user-add" />,
                 <Link to="/messages">
@@ -76,7 +83,12 @@ class FriendsAction extends React.Component {
               hoverable
               style={{ width: 240 }}
               size="default"
-              cover={<img alt="example" src="https://i.pinimg.com/originals/92/f2/84/92f284836339a3e6937dde9f49a46905.png" />}
+              cover={
+                <img
+                  alt="example"
+                  src="https://i.pinimg.com/originals/92/f2/84/92f284836339a3e6937dde9f49a46905.png"
+                />
+              }
               actions={[
                 <Icon onClick={openNotification} type="user-add" />,
                 <Link to="/messages">
@@ -92,7 +104,12 @@ class FriendsAction extends React.Component {
               hoverable
               style={{ width: 240 }}
               size="default"
-              cover={<img alt="example" src="http://totallynailedit.com/wp-content/uploads/2015/03/fyi-squidward-from-quotspongebobquot-isnt-a-squid-1425496818784-150x150.gif" />}
+              cover={
+                <img
+                  alt="example"
+                  src="http://totallynailedit.com/wp-content/uploads/2015/03/fyi-squidward-from-quotspongebobquot-isnt-a-squid-1425496818784-150x150.gif"
+                />
+              }
               actions={[
                 <Icon onClick={openNotification} type="user-add" />,
                 <Link to="/messages">
@@ -108,8 +125,10 @@ class FriendsAction extends React.Component {
               hoverable
               style={{ width: 240 }}
               size="default"
-              cover={<img alt="example" src="https://i.imgflip.com/2/3061zr.jpg" />}
-              actions={[<Icon type="user-add" />, <Icon type="message" />]}
+              cover={
+                <img alt="example" src="https://i.imgflip.com/2/3061zr.jpg" />
+              }
+              // actions={[<Icon type="user-add" />, <Icon type="message" />]}
               actions={[
                 <Icon onClick={openNotification} type="user-add" />,
                 <Link to="/messages">
