@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import LoginForm from "../components/LoginForm";
 import "./Home.css";
-import GoogleLogin from "../components/GoogleLogin";
+import GoogleLoginForm from "../components/GoogleLogin";
 
 class Home extends Component {
   render() {
