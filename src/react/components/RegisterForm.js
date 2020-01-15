@@ -4,6 +4,7 @@ import "./LoginForm.css";
 import "antd/dist/antd.css";
 import { Spinner } from ".";
 import { withAsyncAction } from "../HOCs";
+import {Link} from "react-router-dom";
 
 class RegisterForm extends React.Component {
   state = { username: "", password: "", displayName: "" };
@@ -16,38 +17,38 @@ class RegisterForm extends React.Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
+
   render() {
     const { loading, error } = this.props;
     return (
       <React.Fragment>
         <Form className="login-form" onSubmit={this.handleLogin}>
           <Form.Item htmlFor="username">
-            Create a Username
             <Input
               prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="Username"
+              name="username"
               required
-              type="text"
               autoFocus
               onChange={this.handleChange}
+            
             />
           </Form.Item>
           <Form.Item htmlFor="displayName">
-            Create a Display Name
             <Input
               prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="Display Name"
-              type="text"
+              name="displayName"
               autoFocus
               required
               onChange={this.handleChange}
             />
           </Form.Item>
           <Form.Item htmlFor="password">
-            Create a Password
             <Input
               prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="password"
+              name="password"
               type="password"
               required
               onChange={this.handleChange}
@@ -58,10 +59,18 @@ class RegisterForm extends React.Component {
               type="primary"
               htmlType="submit"
               className="login-form-button"
-              href="/questionnaire"
-              disable={loading}
+              disabled={loading}
             >
               Register
+            </Button>
+          </Form.Item>
+          <Form.Item>
+            <Button
+              type="secondary"
+              htmlType="submit"
+              className="login-form-button"
+            >
+              <Link to="/login"> Already a member? Login Here </Link>
             </Button>
           </Form.Item>
         </Form>

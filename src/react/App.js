@@ -1,14 +1,7 @@
 import React, { Component } from "react";
-import logo from "./svg/logo.svg";
 import "./App.css";
 import pages from "./pages";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Link,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {

@@ -3,7 +3,7 @@ import LoginForm from "../components/LoginForm";
 import "./Home.css";
 import { userIsNotAuthenticated } from "../HOCs";
 
-class Home extends Component {
+class Login extends Component {
   render() {
     return (
       <>
@@ -18,4 +18,4 @@ class Home extends Component {
   }
 }
 
-export default userIsNotAuthenticated(Home);
+export default userIsNotAuthenticated(Login);

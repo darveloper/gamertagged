@@ -1,24 +1,24 @@
 import React from "react";
 import FriendsAction from "../components/FriendsAction";
 import "./Matches.css";
-import "antd/dist/antd.css";
-import SideMenu from "../components/SideMenu";
+import 'antd/dist/antd.css';
 // import Sidemenu from "../components/SideMenu"
 
-class Matches extends React.Component {
+class Friends extends React.Component {
   render() {
     return (
       <div>
-        <SideMenu>
-          <h1>Matches</h1>
-
+        {/* <Sidemenu /> */}
+        <h1>Friends</h1>
+      
+        <div className="container" style={{ height: "100vh" }}>
           <div className="UserCard">
             <FriendsAction className="MatchCard" />
           </div>
-        </SideMenu>
+        </div>
       </div>
     );
   }
 }
 
-export default Matches;
+export default Friends;

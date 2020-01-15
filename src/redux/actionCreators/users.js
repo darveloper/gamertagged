@@ -1,6 +1,6 @@
 import { domain, jsonHeaders, handleJsonResponse } from "./constants";
 import { GETUSER, POSTUSER, DELETEUSER, PUTUSERIMAGE } from "../actionTypes";
-
+// import { login } from "../stateReducers/auth";
 import { push } from "connected-react-router";
 
 const url = domain + "/users";

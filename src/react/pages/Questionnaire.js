@@ -3,6 +3,8 @@ import quizQuestions from "../api/quizQuestions";
 import Quiz from "../components/Quiz";
 import Result from "../components/Result";
 import { Button } from "antd";
+import "./Questionnaire.css";
+import { userIsAuthenticated } from "../HOCs";
 
 class Questionnaire extends React.Component {
   constructor(props) {
@@ -116,10 +118,13 @@ class Questionnaire extends React.Component {
 
   renderResult() {
     return (
-      <div>
-    <Result quizResult={this.state.result} />
-    <Button className="toMatches" href="/matches"> See Your Matches! </Button>
-    </div>
+      <div style={{ textAlign: "center" }}>
+        <Result quizResult={this.state.result} />
+        <Button type="primary" className="toMatches" href="/matches">
+          {" "}
+          See Your Matches!{" "}
+        </Button>
+      </div>
     );
   }
 
@@ -133,4 +138,4 @@ class Questionnaire extends React.Component {
   }
 }
 
-export default Questionnaire;
+export default userIsAuthenticated(Questionnaire);

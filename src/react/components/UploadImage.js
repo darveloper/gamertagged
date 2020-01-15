@@ -1,37 +1,52 @@
 import React from "react";
-import { Upload, message, Button, Icon } from "antd";
+import { Upload, message, Button, Icon, Form, Input } from "antd";
+import { connect, withAsyncAction } from "../HOCs";
 import "antd/dist/antd.css";
 
-const props = {
-    name: 'file',
-    action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
-    headers: {
-      authorization: 'authorization-text',
-    },
-    onChange(info) {
-      if (info.file.status !== 'uploading') {
-        console.log(info.file, info.fileList);
-      }
-      if (info.file.status === 'done') {
-        message.success(`${info.file.name} file uploaded successfully`);
-      } else if (info.file.status === 'error') {
-        message.error(`${info.file.name} file upload failed.`);
-      }
-    },
-  };
-
 class UploadImage extends React.Component {
+  handleUpload = event => {
+    event.preventDefault();
+    console.log("uploaded!");
+    const formData = new FormData(event.target);
+    this.props.putUserImage(formData);
+  };
   render() {
     return (
       <React.Fragment>
-        <Upload {...props}>
-          <Button size="small" style={{ margin: "10px" }} type="ghost">
-            <Icon type="upload" /> Click to Upload
-          </Button>
-        </Upload>
+        {this.props.username === this.props.loggedInUsername && (
+          <Form
+            
+            style={{ display: "flex", flexDirection: "row" }}
+          >
+            <Input
+              style={{ borderRadius: "0", paddingTop: "10px" }}
+              
+              size="small"
+              type="file"
+              name="picture"
+            />
+            <Button
+              shape="round"
+              theme="primary"
+              size="small"
+              type="submit"
+              value="Upload Picture"
+              onSubmit={this.handleUpload}
+            >
+              <Icon type="upload" />{" "}
+              Upload
+            </Button>
+          </Form>
+        )}
       </React.Fragment>
     );
   }
 }
-
-export default UploadImage;
+const mapStateToProps = state => {
+  return {
+    loggedInUsername: state.auth.login.result.username
+  };
+};
+export default connect(mapStateToProps)(
+  withAsyncAction("users", "putUserImage")(UploadImage)
+);
