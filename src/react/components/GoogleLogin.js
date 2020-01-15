@@ -9,13 +9,13 @@ class GoogleLogin extends Component {
       const responseGoogle = (response) => {
         console.log(response);
       }
-  
+
       return (
         <div className="App">
           <h1>LOGIN WITH GOOGLE</h1>
   
         <GoogleLogin
-          clientId="" //CLIENTID NOT CREATED YET
+          clientId="869187170200-3dtdrjohk5k63ogj0roa8l9k4gpmjr88.apps.googleusercontent.com" //CLIENTID NOT CREATED YET
           buttonText="LOGIN WITH GOOGLE"
           onSuccess={responseGoogle}
           onFailure={responseGoogle}
