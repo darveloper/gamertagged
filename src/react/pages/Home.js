@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import LoginForm from "../components/LoginForm";
 import "./Home.css";
+import LoginForm from "../components/LoginForm";
 import GoogleLogin from "../components/GoogleLogin";
 
 class Home extends Component {
@@ -8,7 +8,9 @@ class Home extends Component {
     return (
       <>
         <div className="header">
-          <h1 style={{ fontFamily: "Orbitron" }}>Welcome To GamerTagged!</h1>
+          <h1 style={{ fontFamily: "Orbitron", color: "white" }}>
+            Welcome To GamerTagged!
+          </h1>
         </div>
         <div className="login_container" style={{ marginTop: "5%" }}>
           <LoginForm />
