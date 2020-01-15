@@ -1,8 +1,6 @@
 import React from "react";
-import "semantic-ui-css/semantic.min.css";
 import SideMenu from "../components/SideMenu";
 import { Input, Card, Col, Row, Button } from "antd";
-import "semantic-ui-css/semantic.min.css";
 import "./FriendsPage.css";
 const { Search } = Input;
 const { Meta } = Card;
