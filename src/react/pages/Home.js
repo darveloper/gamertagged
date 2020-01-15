@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import LoginForm from "../components/LoginForm";
 import "./Home.css";
+import { go } from "connected-react-router";
+import GoogleLogin from "../components/GoogleLogin";
 
 class Home extends Component {
   render() {
@@ -11,6 +13,7 @@ class Home extends Component {
         </div>
         <div className="login_container" style={{ marginTop: "5%" }}>
           <LoginForm />
+          <GoogleLogin />
         </div>
       </>
     );
