@@ -1,15 +1,20 @@
 import React from "react";
-import { Button } from "antd";
-import pages from "../pages";
+import { Result, Button } from "antd";
 
 class NotFound extends React.Component {
   render() {
     return (
       <>
-        <h1 style={{ textAlign: "center" }}>Page not found</h1>
-        <Button type="link" block href={pages.Home.path}>
-          Go Back Home
-        </Button>
+        <Result
+          status="404"
+          title="404"
+          subTitle="Sorry, the page you visited does not exist."
+          extra={
+            <Button type="primary" href="/">
+              Back to Login
+            </Button>
+          }
+        />
       </>
     );
   }

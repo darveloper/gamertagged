@@ -1,17 +1,21 @@
 import React from "react";
 import UserCard from "../components/UserCard";
-import "./Profile.css"
+import SideMenu from "../components/SideMenu";
+import "./Profile.css";
+import { userIsAuthenticated } from "../HOCs";
 
 class Profile extends React.Component {
-    render() {
-        return (
-            <div className="container" style={{ height: "100vh" }}>
-                <div className="UserCard">
-                    <UserCard />   
-                </div>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <SideMenu>
+          <div className="UserCard">
+            <UserCard />
+          </div>
+        </SideMenu>
+      </div>
+    );
+  }
 }
 
-export default Profile;
+export default userIsAuthenticated(Profile);
