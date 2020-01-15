@@ -1,13 +1,17 @@
 div.container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .UserCard {
   margin-top: 20px;
-  margin-left: 5%;
+ 
   size: 20px;
+  justify-content: center;
 }
 
 h4 {
@@ -21,4 +25,8 @@ h1 {
 
 body {
   background-color: black;
+}
+
+.container {
+  justify-content: center;
 }

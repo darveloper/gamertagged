@@ -54,6 +54,13 @@ class SideMenu extends React.Component {
                 </NavLink>
               </Menu.Item>
 
+              <Menu.Item key="4">
+                <NavLink to={`/inbox/`} activeClassName="chosen">
+                  <Icon type="mail" />
+                  Inbox
+                </NavLink>
+              </Menu.Item>
+
               <Menu.Item>
                 <NavLink to="/" onClick={this.handleLogout}>
                   <Icon type="logout" />

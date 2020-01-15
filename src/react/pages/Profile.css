@@ -2,11 +2,14 @@ div.container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  width: 20%;
+  margin: 0 auto;
 }
 
-.UserCard {
+div.UserCard {
   margin-top: 20px;
   margin-left: 5%;
+  height: 84vh;
 }
 
 h4 {
