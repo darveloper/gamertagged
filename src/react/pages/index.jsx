@@ -10,7 +10,6 @@ export default {
   Home: { path: "/", component: Home },
   Profile: { path: "/profile", component: Profile },
   Matches: { path: "/matches", component: Matches },
-  FriendsPage: { path: "/friendspage", component: FriendsPage},
   Register: { path: "/register", component: Register },
   Questionnaire: { path: "/questionnaire", component: Questionnaire },
   NotFound: { path: "*", component: NotFound }

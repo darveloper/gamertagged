@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { Menu, Icon, Layout } from "antd";
 import "./SideMenu.css";
 import { connect, withAsyncAction } from "../HOCs";
-
 const { Header, Footer, Sider, Content } = Layout;
 
 class SideMenu extends React.Component {
@@ -43,12 +42,6 @@ class SideMenu extends React.Component {
                   Profile
                 </NavLink>
               </Menu.Item>
-              <Menu.Item key="3">
-              <NavLink to={`/friendspage/`} activeClassName="chosen">
-                <Icon type="friends" />
-               Friends
-              </NavLink>
-            </Menu.Item>
 
               <Menu.Item>
                 <NavLink to="/" onClick={this.handleLogout}>
