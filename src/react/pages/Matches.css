@@ -5,6 +5,7 @@ div.container {
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: auto;
 }
 
 .UserCard {
