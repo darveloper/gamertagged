@@ -16,7 +16,7 @@ class UserCard extends React.Component {
               <img
                 className="cardImg"
                 alt="example"
-                src="https://image.flaticon.com/icons/svg/1880/1880988.svg"
+                src="https://vignette.wikia.nocookie.net/spongebob/images/5/5f/Larry_the_Lobster_in_A_Day_in_a_Life-77.png/revision/latest/top-crop/width/150/height/150?cb=20150322050144"
               />
             }
             actions={[
