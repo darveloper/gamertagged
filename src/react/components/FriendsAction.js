@@ -1,6 +1,7 @@
 import React from "react";
 import "antd/dist/antd.css";
 import { Card, Icon, Col, Row } from "antd";
+import { Link } from "react-router-dom";
 
 const { Meta } = Card;
 class FriendsAction extends React.Component {
@@ -14,7 +15,7 @@ class FriendsAction extends React.Component {
               style={{ width: 240 }}
               size="default"
               cover={<img alt="example" src="http://placehold.it/150x150" />}
-              actions={[<Icon type="user-add" />, <Icon type="message" />]}
+              actions={[<Icon type="user-add" />, <Link to="/messages"><Icon type="message" /></Link>]}
             >
               <Meta title="Username" description="90% Gamer Match" />
             </Card>
