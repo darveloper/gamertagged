@@ -2,6 +2,7 @@ import React from "react";
 import "antd/dist/antd.css";
 import { Card, Icon } from "antd";
 
+
 class MatchCard extends React.Component {
   render() {
     const { Meta } = Card;

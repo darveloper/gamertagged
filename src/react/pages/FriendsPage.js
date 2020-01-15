@@ -1,7 +1,6 @@
 import React from "react";
 import SideMenu from "../components/SideMenu";
 import { Input, Card, Col, Row, Button } from "antd";
-import "./FriendsPage.css";
 const { Search } = Input;
 const { Meta } = Card;
 
@@ -14,9 +13,9 @@ class FriendsPage extends React.Component {
             className="searchbar"
             placeholder="Search Gamers"
             onSearch={value => console.log(value)}
-            style={{ width: 200, marginLeft: "41%", marginTop: "15px" }}
+            style={{ width: 200, marginLeft: "75%", marginTop: "15px" }}
           />
-          <h1>Requests</h1>
+          <h1 style={{ paddingTop: "15px " }}>Requests</h1>
           <div style={{ padding: "30px" }}>
             <Row gutter={16}>
               <Col span={8}>

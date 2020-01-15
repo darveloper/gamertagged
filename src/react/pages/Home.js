@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
 import LoginForm from "../components/LoginForm";
-import GoogleLogin from "../components/GoogleLogin";
+import GoogleLoginForm from "../components/GoogleLogin";
 
 class Home extends Component {
   render() {
@@ -14,7 +14,7 @@ class Home extends Component {
         </div>
         <div className="login_container" style={{ marginTop: "5%" }}>
           <LoginForm />
-          <GoogleLogin />
+          <GoogleLoginForm />
         </div>
       </>
     );

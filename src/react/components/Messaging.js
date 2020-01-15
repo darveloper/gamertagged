@@ -47,8 +47,8 @@ class Messaging extends React.Component {
         value: '',
         comments: [
           {
-            author: 'Han Solo',
-            avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+            author: 'Spongebob',
+            avatar: 'https://i.pinimg.com/170x/21/06/4c/21064c8984bfbf924408fdf8c0283966.jpg',
             content: <p>{this.state.value}</p>,
             datetime: moment().fromNow(),
           },
@@ -73,7 +73,7 @@ class Messaging extends React.Component {
         <Comment
           avatar={
             <Avatar
-              src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+              src="https://i.pinimg.com/170x/21/06/4c/21064c8984bfbf924408fdf8c0283966.jpg"
               alt="Han Solo"
             />
           }
