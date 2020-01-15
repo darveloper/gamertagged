@@ -5,6 +5,7 @@ import Matches from "./Matches";
 import Register from "./Register";
 import Questionnaire from "./Questionnaire";
 import Messages from "./Messages";
+import Onboarding from "./Onboarding";
 // import FriendsPage from "./FriendsPage"
 
 export default {
@@ -13,6 +14,7 @@ export default {
   Matches: { path: "/matches", component: Matches },
   Register: { path: "/register", component: Register },
   Messages: { path: "/messages", component: Messages },
+  Onboarding: { path: "/onboarding", component: Onboarding },
   // FriendsPage: { path: "/friendspage", component: FriendsPage },
   Questionnaire: { path: "/questionnaire", component: Questionnaire },
   NotFound: { path: "*", component: NotFound }
