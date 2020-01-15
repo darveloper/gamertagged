@@ -4,7 +4,7 @@ import "./LoginForm.css";
 import "antd/dist/antd.css";
 import { Spinner } from ".";
 import { withAsyncAction } from "../HOCs";
-
+import { Link } from "react-router-dom";
 class RegisterForm extends React.Component {
   state = { username: "", password: "", displayName: "" };
 
@@ -51,14 +51,15 @@ class RegisterForm extends React.Component {
             />
           </Form.Item>
           <Form.Item>
+            
             <Button
               type="primary"
               htmlType="submit"
               className="login-form-button"
-              href="/questionnaire"
+              
               disable={loading}
             >
-              Register
+              <Link to="/questionnaire">Register</Link>
             </Button>
           </Form.Item>
           <Form.Item>
