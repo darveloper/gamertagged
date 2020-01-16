@@ -1,13 +1,12 @@
 import React from "react";
 import { Card, Icon } from "antd";
 import UploadImage from "../components/UploadImage";
-import GameUpload from "../components/GameUpload";
 
 class UserCard extends React.Component {
   render() {
     const { Meta } = Card;
     return (
-      <div id="container" style={{ height: "100vh" }}>
+      <div id="container">
         <Card
           style={{ maxWidth: "300px", margin: "auto" }}
           cover={
@@ -25,7 +24,6 @@ class UserCard extends React.Component {
         >
           <Meta title="Username" description="Tagline" />
           <UploadImage classname="uploadImg" />
-          <GameUpload className="gameUpload" />
         </Card>
       </div>
     );
