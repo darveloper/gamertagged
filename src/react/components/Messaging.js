@@ -47,8 +47,8 @@ class Messaging extends React.Component {
         value: '',
         comments: [
           {
-            author: 'Spongebob',
-            avatar: 'https://i.pinimg.com/170x/21/06/4c/21064c8984bfbf924408fdf8c0283966.jpg',
+            author: 'LarryDaLobster',
+            avatar: 'https://vignette.wikia.nocookie.net/spongebob/images/5/5f/Larry_the_Lobster_in_A_Day_in_a_Life-77.png/revision/latest/top-crop/width/150/height/150?cb=20150322050144',
             content: <p>{this.state.value}</p>,
             datetime: moment().fromNow(),
           },
@@ -73,8 +73,8 @@ class Messaging extends React.Component {
         <Comment
           avatar={
             <Avatar
-              src="https://i.pinimg.com/170x/21/06/4c/21064c8984bfbf924408fdf8c0283966.jpg"
-              alt="Han Solo"
+              src="https://vignette.wikia.nocookie.net/spongebob/images/5/5f/Larry_the_Lobster_in_A_Day_in_a_Life-77.png/revision/latest/top-crop/width/150/height/150?cb=20150322050144"
+              alt="LarryDaLobster"
             />
           }
           content={
