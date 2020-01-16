@@ -130,7 +130,7 @@ class Questionnaire extends React.Component {
   render() {
     return (
       <div>
-        <h1> Questionnaire </h1>
+        <h1 style={{ color: "black" }}> Questionnaire </h1>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
