@@ -1,6 +1,7 @@
 import React from "react";
 import SideMenu from "../components/SideMenu";
-import { Input, Card, Col, Row, Button, PageHeader } from "antd";
+import { Input, Card, Col, Row, Button, PageHeader, Icon } from "antd";
+import "./Matches.css";
 const { Search } = Input;
 const { Meta } = Card;
 
@@ -12,20 +13,22 @@ class FriendsPage extends React.Component {
           <SideMenu>
             <PageHeader
               style={{
-                border: "1px solid rgb(235, 237, 240)"
+                border: "1px solid rgb(235, 237, 240)",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center"
               }}
               onBack={() => window.history.back()}
-              title="Friends"
-            />
-            <Search
-              className="searchbar"
-              placeholder="Search Gamers"
-              onSearch={value => console.log(value)}
-              style={{ width: 200, marginLeft: "75%", marginTop: "15px" }}
-            />
-            <div
-              style={{ padding: "30px", height: "100vh", marginLeft: "264px" }}
+              title="Requests"
             >
+              <Search
+                className="searchbar"
+                placeholder="Search Gamers"
+                onSearch={value => console.log(value)}
+                style={{ width: 200, marginRight: "50px", marginTop: "15px" }}
+              />
+            </PageHeader>
+            <div className="container">
               <Row gutter={16}>
                 <Col span={8}>
                   <Card
@@ -63,7 +66,7 @@ class FriendsPage extends React.Component {
                       <Button type="danger">Decline</Button>
                     ]}
                   >
-                    <Meta title="Tay Tay" description="90% Gamer Match" />
+                    <Meta title="Tay Tay" description="86% Gamer Match" />
                   </Card>
                 </Col>
                 <Col span={8}>
@@ -82,10 +85,87 @@ class FriendsPage extends React.Component {
                       <Button type="danger">Decline</Button>
                     ]}
                   >
-                    <Meta title="Mauricio" description="90% Gamer Match" />
+                    <Meta title="Mauricio" description="72% Gamer Match" />
                   </Card>
                 </Col>
               </Row>
+            </div>
+
+            <PageHeader
+              style={{
+                border: "1px solid rgb(235, 237, 240)",
+                textAlign: "center"
+              }}
+              title="My Friends"
+            ></PageHeader>
+            <div style={{ height: "50vh", marginBottom: "25px" }}>
+              <div className="container">
+                <Row gutter={16}>
+                  <Col span={8}>
+                    <Card
+                      hoverable
+                      style={{ width: 240 }}
+                      size="default"
+                      cover={
+                        <img
+                          alt="example"
+                          src="https://avatarfiles.alphacoders.com/129/thumb-12947.jpg"
+                        />
+                      }
+                      actions={[
+                        <Icon type="mail" />,
+                        <Icon type="star" />,
+                        <Icon type="setting" key="setting" />
+                      ]}
+                    >
+                      <Meta title="Bill" description="Ready to Rumble" />
+                    </Card>
+                  </Col>
+                  <Col span={8}>
+                    <Card
+                      hoverable
+                      style={{ width: 240 }}
+                      size="default"
+                      cover={
+                        <img
+                          alt="example"
+                          src="https://avatarfiles.alphacoders.com/310/thumb-31046.jpg"
+                        />
+                      }
+                      actions={[
+                        <Icon type="mail" />,
+                        <Icon type="star" />,
+                        <Icon type="setting" key="setting" />
+                      ]}
+                    >
+                      <Meta
+                        title="Havalina"
+                        description="On the planes of Old Sedona..."
+                      />
+                    </Card>
+                  </Col>
+                  <Col span={8}>
+                    <Card
+                      hoverable
+                      style={{ width: 240 }}
+                      size="default"
+                      cover={
+                        <img
+                          alt="example"
+                          src="http://www.avatars.com.au/avatars/cartoons/courage-the-cowardly-dog-150x150.jpg"
+                        />
+                      }
+                      actions={[
+                        <Icon type="mail" />,
+                        <Icon type="star" />,
+                        <Icon type="setting" key="setting" />
+                      ]}
+                    >
+                      <Meta title="Rex" description="Lets do this!!" />
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
             </div>
           </SideMenu>
         </div>

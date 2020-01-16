@@ -6,12 +6,10 @@ div.container {
   padding-top: 10px;
   padding-bottom: 10px;
   width: auto;
-  height: 100vh;
 }
 
 .UserCard {
   margin-top: 20px;
-
   size: 20px;
   justify-content: center;
 }
