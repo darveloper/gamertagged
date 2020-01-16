@@ -129,4 +129,3 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps)(
   withAsyncAction("auth", "logout")(SideMenu)
 );
-// export default SideMenu;

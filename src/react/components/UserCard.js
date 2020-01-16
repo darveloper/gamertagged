@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Icon } from "antd";
 import UploadImage from "../components/UploadImage";
+import GameUpload from "../components/GameUpload";
 
 class UserCard extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class UserCard extends React.Component {
         >
           <Meta title="Username" description="Tagline" />
           <UploadImage classname="uploadImg" />
+          <GameUpload className="gameUpload" />
         </Card>
       </div>
     );
