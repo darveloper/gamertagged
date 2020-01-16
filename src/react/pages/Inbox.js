@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { List, Avatar, Spin, message } from "antd";
+import { List, Avatar, Spin, message, PageHeader } from "antd";
 import reqwest from "reqwest";
 import "./Inbox.css";
 import SideMenu from "../components/SideMenu";
 import InfiniteScroll from "react-infinite-scroller";
 const fakeDataUrl =
-  "https://randomuser.me/api/?results=20&inc=name,gender,email,nat&noinfo";
+  "https://randomuser.me/api/?results=5&inc=name,gender,email,nat&noinfo";
 
 class Inbox extends Component {
   state = {
@@ -58,8 +58,14 @@ class Inbox extends Component {
   render() {
     return (
       <>
-        <h1>Inbox</h1>
         <SideMenu>
+          <PageHeader
+            style={{
+              border: "1px solid rgb(235, 237, 240)"
+            }}
+            onBack={() => window.history.back()}
+            title="Inbox"
+          />
           <div style={{ height: "84vh", backgroundColor: "white" }}>
             <div className="demo-infinite-container">
               <InfiniteScroll

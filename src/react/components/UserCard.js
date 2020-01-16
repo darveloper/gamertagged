@@ -1,37 +1,32 @@
 import React from "react";
-import "antd/dist/antd.css";
 import { Card, Icon } from "antd";
 import UploadImage from "../components/UploadImage";
+import GameUpload from "../components/GameUpload";
 
 class UserCard extends React.Component {
   render() {
     const { Meta } = Card;
     return (
-      <div id="container">
-        <div className="container">
-          <Card
-            
-            style={{ maxWidth: "300px" }}
-            cover={
-              <img
-                className="cardImg"
-                alt="example"
-                src="https://vignette.wikia.nocookie.net/spongebob/images/5/5f/Larry_the_Lobster_in_A_Day_in_a_Life-77.png/revision/latest/top-crop/width/150/height/150?cb=20150322050144"
-              />
-            }
-            actions={[
-              <Icon type="setting" key="setting" />,
-              <Icon type="edit" key="edit" />,
-              <Icon type="ellipsis" key="ellipsis" />
-            ]}
-          >
-            <Meta
-              title="Username"
-              description="Tagline"
+      <div id="container" style={{ height: "100vh" }}>
+        <Card
+          style={{ maxWidth: "300px", margin: "auto" }}
+          cover={
+            <img
+              className="cardImg"
+              alt="example"
+              src="https://vignette.wikia.nocookie.net/spongebob/images/5/5f/Larry_the_Lobster_in_A_Day_in_a_Life-77.png/revision/latest/top-crop/width/150/height/150?cb=20150322050144"
             />
-            <UploadImage classname="uploadImg"/>
-          </Card>
-        </div>
+          }
+          actions={[
+            <Icon type="setting" key="setting" />,
+            <Icon type="edit" key="edit" />,
+            <Icon type="ellipsis" key="ellipsis" />
+          ]}
+        >
+          <Meta title="Username" description="Tagline" />
+          <UploadImage classname="uploadImg" />
+          <GameUpload className="gameUpload" />
+        </Card>
       </div>
     );
   }

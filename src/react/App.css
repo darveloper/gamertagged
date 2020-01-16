@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   background-color: #001529;
+  height: 100%;
 }
 
 .App-logo {
