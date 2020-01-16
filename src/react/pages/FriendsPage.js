@@ -12,17 +12,21 @@ class FriendsPage extends React.Component {
           <SideMenu>
             <PageHeader
               style={{
-                border: "1px solid rgb(235, 237, 240)"
+                border: "1px solid rgb(235, 237, 240)",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center"
               }}
               onBack={() => window.history.back()}
               title="Friends"
-            />
-            <Search
-              className="searchbar"
-              placeholder="Search Gamers"
-              onSearch={value => console.log(value)}
-              style={{ width: 200, marginLeft: "75%", marginTop: "15px" }}
-            />
+            >
+              <Search
+                className="searchbar"
+                placeholder="Search Gamers"
+                onSearch={value => console.log(value)}
+                style={{ width: 200, marginRight: "50px", marginTop: "15px" }}
+              />
+            </PageHeader>
             <div
               style={{ padding: "30px", height: "100vh", marginLeft: "264px" }}
             >
