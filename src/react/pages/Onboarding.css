@@ -1,19 +1,28 @@
 .ant-carousel .slick-slide {
-    text-align: center;
-    height: 50vh;
-    margin-top: 1%;
-    line-height: 50vh;
-    background: #364d79;
-    opacity: 0.8;
-    overflow: hidden;
-  }
-  
-  .ant-carousel .slick-slide h2 {
-    color: #fff;
-    font-size: xx-large;
-  }
+  text-align: center;
+  height: 50vh;
+  margin-top: 1%;
+  line-height: 50vh;
+  background: #364d79;
+  opacity: 0.8;
+  overflow: hidden;
+}
 
-  .ant-carousel .slick-slide p {
-    color: #fff;
-    font-size: large;
-  }
+.ant-carousel .slick-slide h2 {
+  color: white;
+  font-size: xx-large;
+}
+
+.ant-carousel .slick-slide p {
+  color: white;
+  font-size: large;
+}
+
+body {
+  background: url("https://i.imgur.com/tIjx3eF.jpg") no-repeat;
+  background-color: #dae8f3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+}
