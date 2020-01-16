@@ -22,7 +22,7 @@ class UserCard extends React.Component {
             <Icon type="ellipsis" key="ellipsis" />
           ]}
         >
-          <Meta title="Username" description="Tagline" />
+          <Meta title="LarryDaLobster" description="WHERE'S YOUR SUNSCREEN!" />
           <UploadImage classname="uploadImg" />
         </Card>
       </div>
