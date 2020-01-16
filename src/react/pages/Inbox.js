@@ -4,7 +4,8 @@ import reqwest from "reqwest";
 import "./Inbox.css";
 import SideMenu from "../components/SideMenu";
 import InfiniteScroll from "react-infinite-scroller";
-const fakeDataUrl = 'https://randomuser.me/api/?results=5&inc=name,gender,email,nat&noinfo';
+const fakeDataUrl =
+  "https://randomuser.me/api/?results=20&inc=name,gender,email,nat&noinfo";
 
 class Inbox extends Component {
   state = {
